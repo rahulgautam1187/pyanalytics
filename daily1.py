@@ -121,6 +121,7 @@ import numpy
 numpy.array([10,20])
 
 import numpy as np #np is alias
+
 np1 = np.arange(1,10)
 x=np.arange(start=1,stop=1000000,step=2)
 len(x)
@@ -130,7 +131,6 @@ np
 np.mean(np.arange(1,10000000))
 np1
 type(np1)
-np?
 #help on numpy 
 dir(np)  #functions available in numpy
 np.mean?  # help on mean function of numpy
@@ -141,6 +141,7 @@ dir(np)
 np3 = np.array([[1,4],[3,1],[5,6],[10,50]])
 np3
 np3.shape
+x.shape # telling the order of matrix
 #http://cs231n.github.io/python-numpy-tutorial/
 #%%
 #pandas - dataframe, excel like
@@ -187,14 +188,15 @@ import statsmodels.api as sm
 #https://vincentarelbundock.github.io/Rdatasets/datasets.html
 mtcars = sm.datasets.get_rdataset(dataname='mtcars', package= 'datasets')
 mtcars.data.head()
-
+mtcars.data.tail()
+mtcars.data.columns
 #%%
 #Load from Excel/ CSV and export to
 data = mtcars.data
-data.head(6)
+Africadata.head(6)
 type(data)
 data.to_csv('mtcars.csv')
-data.to_excel('mtcarsExcel.xlsx','sheet3', header=False)
+data.to_excel('mtcarsExcel1.xlsx','sheet3', header=True)
 
 #writing to multiple sheets
 writer = pd.ExcelWriter('test.xlsx', engine='xlsxwriter')
@@ -208,6 +210,7 @@ writer.save()
 data.to_excel?
 #load from CSV and Excel
 data2a
+import pandas as pd
 data2a = pd.read_csv('mtcars.csv') #when csv is in project folder
 data2a
 data2b
