@@ -56,7 +56,7 @@ type(set2)
 print(set2)
 #%% #Strings : 'single quote'  or "doublequote"
 #strings as text in string; imutable
-str1 = 'PythonProgramming'
+str1 = 'PythonProgramming1'
 type(str1)
 len(str1)
 print(str1)
