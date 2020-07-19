@@ -71,7 +71,11 @@ for i in list1:
     print(i)
   
 for i in list1:    print(i)
+
 for i in list1:    print('Dhiraj ', i + 6)
+
+list2 = ['rahul','gautam']
+for i in list2:    print(i)
 
 tuple1
 list5 = ['a',1]
